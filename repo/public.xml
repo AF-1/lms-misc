@@ -3,12 +3,12 @@
         <title lang="EN">AF-1 Repo</title>
     </details>
     <plugins>
-        <plugin name="RatingsLight" version="0.9.3" minTarget="7.9" maxTarget="*">
+        <plugin name="RatingsLight" version="0.9.4" minTarget="7.9" maxTarget="*">
             <title lang="EN">Ratings Light</title>
             <desc lang="EN">Helps plugins set, query or display track ratings in LMS. Can import ratings from files (based on comment tag keywords). Includes filters for CustomSkip.</desc>
-        	<url>https://raw.githubusercontent.com/AF-1/lms-misc/main/repo/plugins/RatingsLight-0.9.3.zip</url>
+        	<url>https://raw.githubusercontent.com/AF-1/lms-misc/main/repo/plugins/RatingsLight-0.9.4.zip</url>
             <creator>AF</creator>
-            <sha>862b3ec69456ca78249940863ba317ea53c48632</sha>
+            <sha>11fcaa04602f4b3c73998a45b5e8aaa14575c27d</sha>
         </plugin>
     </plugins>
 </extensions>
