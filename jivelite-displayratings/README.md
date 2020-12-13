@@ -20,8 +20,9 @@ Each subfolder contains the modified files for the *NowPlaying* and the *skin* a
 <br><br>
 
 
-### Known issues
-If you pause a track and then resume playback of the same track it often takes a couple of seconds before the artist and album names are displayed again. If that's a trade-off you can life with is for you to decide.
+### quirks
+* If you *pause* a track and then *resume* playback of the same track it often takes a couple of seconds before the artist and album names are displayed again.
+* If you *change the rating value* of a track while it's playing the new rating value is not displayed immediately, not until you either pause/resume or restart the track.<br>If you can life with that is for you to decide.
 
 <br><br>
 
