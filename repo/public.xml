@@ -3,12 +3,12 @@
         <title lang="EN">AF-1 Repo</title>
     </details>
     <plugins>
-        <plugin name="RatingsLight" version="1.0.0" minTarget="7.9" maxTarget="*">
+        <plugin name="RatingsLight" version="1.0.1" minTarget="7.9" maxTarget="*">
             <title lang="EN">Ratings Light</title>
             <desc lang="EN">Set, import and export track ratings. View track ratings in LMS context menu. Skip (un-)rated tracks with CustomSkip. Browse rated tracks by artist or genre.</desc>
-        	<url>https://raw.githubusercontent.com/AF-1/lms-misc/main/repo/plugins/RatingsLight-1.0.0.zip</url>
+        	<url>https://raw.githubusercontent.com/AF-1/lms-misc/main/repo/plugins/RatingsLight-1.0.1.zip</url>
             <creator>AF</creator>
-            <sha>f6536f8114145ba2860d248ddb8f80d117eb2077</sha>
+            <sha>6f81f229e04602e5d0c6458d38ac10132cf32ef7</sha>
         </plugin>
     </plugins>
 </extensions>
