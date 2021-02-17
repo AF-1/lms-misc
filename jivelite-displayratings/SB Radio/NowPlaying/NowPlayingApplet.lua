@@ -134,7 +134,7 @@ function _getRating(self)
 				else
 							currentRatingInfo = chunk.data.songinfo_loop[3].rating
 							if currentRatingInfo then
-								rating = math.floor((currentRatingInfo + 10)/ 20)
+								rating = tonumber(currentRatingInfo);
 								if rating > 0 then
 									self.myrating:setStyle('ratingLevel'..rating)
 								end
