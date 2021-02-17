@@ -124,7 +124,7 @@ function _getRating(self)
 	local playerStatus = self.player:getPlayerStatus()
 	local server = self.player:getSlimServer()
 	local thisTrackID = playerStatus.item_loop[1].params.track_id
-	local tracktext_glow_keyword = "SDD"
+	local tracktext_glow_keyword = "YOUR_KEYWORD"
 	local rating = "0"
 	local currentCommentInfo, currentRatingInfo
 	if server then
