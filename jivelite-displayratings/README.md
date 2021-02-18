@@ -20,10 +20,7 @@ Each subfolder contains the modified files for the *NowPlaying* and the *skin* a
 <br><br>
 
 
-### quirks
-* If you *pause* a track and then *resume* playback of the same track it often takes a couple of seconds before the artist and album names are displayed again.
-* If you *change the rating value* of a track while it's playing the new rating value is not displayed immediately, not until you either pause/resume or restart the track.<br>If you can life with that is for you to decide.
-
+### Info
+* If you use the **Ratings Light** plugin to set track ratings and you change the rating value of the currently playing track anywhere else (another player, web UI) the displayed rating on your NowPlaying screen will only take a moment to update.
 <br><br>
-
-P.S. you can **define a keyword** in the *NowPlayingApplet.lua* (line 127 or 128). If the current track's **comment tag** contains this keyword the **track title gets a slight glow** (see radio screenshot #2).
+* You can **define a keyword** in the *NowPlayingApplet.lua* (line 127 or 128). If the current track's **comment tag** contains this keyword the **track title gets a slight glow** (see radio screenshot #2).

@@ -1913,6 +1913,30 @@ function showNowPlaying(self, transition, direct)
 		self.player = appletManager:callService("getCurrentPlayer")
 	end
 
+	self.player:unsubscribe('/slim/ratingslightchangedratingupdate')
+	if self.player then
+		self.player:subscribe(
+			'/slim/ratingslightchangedratingupdate',
+			function(chunk)
+				if not chunk.data[1] or chunk.data[1] ~= "ratingslightchangedratingupdate" then
+					return
+				end
+
+				local currentRatingInfo = chunk.data[5]
+				if currentRatingInfo then
+					local rating = tonumber(currentRatingInfo);
+					if rating > 0 then
+						self.myrating:setStyle('ratingLevel'..rating)
+					else
+						self.myrating:setStyle("")
+					end
+				end
+			end,
+			self.player:getId(),
+			{'ratingslightchangedratingupdate'}
+		)
+	end
+
 	local playerStatus = self.player and self.player:getPlayerStatus()
 
 	log:debug("player=", self.player, " status=", playerStatus)
@@ -2025,6 +2049,7 @@ function _extractTrackInfo(self, _track)
 end
 
 function freeAndClear(self)
+	player:unsubscribe('/slim/ratingslightchangedratingupdate')
 	self.player = false
 	jiveMain:removeItemById('appletNowPlaying')
 	self:free()
